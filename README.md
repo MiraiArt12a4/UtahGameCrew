@@ -1,2 +1,0 @@
-# UtahGameCrew
-First Project
