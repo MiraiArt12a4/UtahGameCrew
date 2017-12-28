@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed;
+    private Rigidbody2D body;
 
+    public void Start()
+    {
+        body = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 15.0f;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * 15.0f;
+        float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2(x, y);
 
-        transform.Translate(x, y, 0);
+        body.MovePosition(body.position + movement * speed);
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if(Input.GetKey(KeyCode.Z))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
