@@ -302,7 +302,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Isometric.cs" />
+    <Compile Include="Assets\Scripts\MoveAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Transport.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

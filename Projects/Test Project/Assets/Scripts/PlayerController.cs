@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,13 +20,5 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(x, y);
 
         body.MovePosition(body.position + movement * speed);
-    }
-
-    public void OnTriggerStay2D(Collider2D collision)
-    {
-        if(Input.GetKey(KeyCode.Z))
-        {
-            Destroy(collision.gameObject);
-        }
     }
 }
