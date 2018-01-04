@@ -15,22 +15,18 @@ public class MoveAnimation : MonoBehaviour {
         DownWalk
     }
 
-	void LateUpdate () {
+	void Update () {
 		if(Input.GetKey(KeyCode.A))
         {
             transition(Animations.LeftWalk, "Pinky_Walk_Left");
         }
-        else if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             transition(Animations.UpWalk, "Pinky_Walk_Up");
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             transition(Animations.DownWalk, "Pinky_Walk_Down");
-        }
-        else if(Input.GetKey(KeyCode.D))
-        {
-            transition(Animations.RightWalk, "Pinky_Walk_Right");
         }
     }
 
