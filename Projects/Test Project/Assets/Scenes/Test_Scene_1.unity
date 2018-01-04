@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 602304954}
   - component: {fileID: 602304958}
   - component: {fileID: 602304957}
+  - component: {fileID: 602304959}
   m_Layer: 0
   m_Name: Single Collsion Object
   m_TagString: Untagged
@@ -474,6 +475,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scene: Test_Scene_2
+--- !u!114 &602304959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 602304953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6983195c5f91084c9122fbe94db23df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _floorHeight: 0
 --- !u!1 &685175430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1021,7 @@ GameObject:
   - component: {fileID: 1914841771}
   - component: {fileID: 1914841772}
   - component: {fileID: 1914841773}
+  - component: {fileID: 1914841774}
   m_Layer: 0
   m_Name: Pinky
   m_TagString: Untagged
@@ -1078,7 +1092,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1914841765}
   m_LocalRotation: {x: 0, y: -0, z: -0.0044484735, w: 0.99999017}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1095,7 +1109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837c35ec3e203cc49a6f22d462efe879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
+  speed: 0.09
 --- !u!50 &1914841770
 Rigidbody2D:
   serializedVersion: 4
@@ -1176,6 +1190,19 @@ PolygonCollider2D:
       - {x: 0.001661913, y: -0.24679035}
       - {x: -0.4886984, y: -0.49624583}
       - {x: 0.0033515808, y: -0.74541134}
+--- !u!114 &1914841774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914841765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4a09fe76341b24d8747ab7b9bde09d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1914841772}
+  _currentAnimation: 0
 --- !u!1 &1923977833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1291,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923977833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
