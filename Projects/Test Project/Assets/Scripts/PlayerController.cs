@@ -17,8 +17,9 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(x, y);
+        float isometricConstant = 0.7071f;
+        Vector2 movement = new Vector2(x*speed, y*speed*isometricConstant);
 
-        body.MovePosition(body.position + movement * speed);
+        body.MovePosition(body.position + movement);
     }
 }
