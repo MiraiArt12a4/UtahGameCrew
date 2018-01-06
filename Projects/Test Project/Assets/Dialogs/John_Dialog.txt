@@ -1,0 +1,6 @@
+Hey wait!  Give me some interesting dialog too!
+&Come on don't give up on me, just because I'm last.
+&errgh!  Very well then, I should just make my own.
+&How do you use a keyboard?
+&Zzzzz... Zzzzzz....
+&Should find a better delimiter than what you chose.

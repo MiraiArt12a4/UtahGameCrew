@@ -6,26 +6,38 @@ using UnityEngine.UI;
 public class DialogController : MonoBehaviour {
 
     [SerializeField]
-    Canvas _dialogBubble;
+    private Canvas _dialogBubble;
     [SerializeField]
-    Text _text;
+    private Text _text;
     [SerializeField]
-    TextAsset _textFile;
+    private TextAsset _textFile;
+
+    private Queue<string> _queue = new Queue<string>();
+
+    private const int CHARACTERS = 51;
+
 	// Use this for initialization
 	void Start () {
         _dialogBubble.enabled = false;
         _text.supportRichText = false;
-        _text.text = _textFile.text;
+
+        string s = _textFile.text;
+        string[] sep = s.Split('&');
+        foreach(string str in sep)
+        {
+            _queue.Enqueue(str);
+        }
 	}
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //_dialogBubble.enabled = true;
+        _text.text = _queue.Dequeue();
         _text.supportRichText = true;
         if (collision.name == "Pinky")
         {
             _dialogBubble.enabled = true;
         }
+        _queue.Enqueue(_text.text);
     }
 
     public void OnTriggerExit2D(Collider2D collision)
