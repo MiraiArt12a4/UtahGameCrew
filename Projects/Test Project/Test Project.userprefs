@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Test Project.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Tiled2Unity\Imported\_ReadMe.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Dialogs\MJ_Dialog.txt">
     <Files>
       <File FileName="Assets\Tiled2Unity\Imported\_ReadMe.txt" Line="1" Column="1" />
+      <File FileName="Assets\Dialogs\MJ_Dialog.txt" Line="5" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
