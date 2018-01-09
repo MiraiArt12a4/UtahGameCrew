@@ -7,12 +7,9 @@ public class Transport : MonoBehaviour {
 
     public string _scene;
 	
-    public void OnTriggerStay2D(Collider2D collider)
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(Input.GetKey(KeyCode.Z))
-        {
-            SceneManager.LoadScene(_scene);
-        }
-        
+        SceneManager.LoadScene(_scene);
     }
 }
