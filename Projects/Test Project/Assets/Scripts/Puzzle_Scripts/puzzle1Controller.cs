@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class puzzle1Controller : MonoBehaviour {
+public class puzzle1Controller : PuzzleControllerBase {
 
     public string _map;
     public int _height;
@@ -13,9 +13,9 @@ public class puzzle1Controller : MonoBehaviour {
     [SerializeField]
     private Image _highlight;
     [SerializeField]
-    private int _pixelHeight;
+    private float _pixelHeight;
     [SerializeField]
-    private int _pixelWidth;
+    private float _pixelWidth;
 
     private int _y;
     private int _x;
@@ -28,11 +28,7 @@ public class puzzle1Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("Test_Scene_1");
-        }
-        else if(Input.GetKeyDown(KeyCode.A))
+		if(Input.GetKeyDown(KeyCode.A))
         {
             if(_x > 0)
             {
