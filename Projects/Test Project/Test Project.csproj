@@ -287,10 +287,7 @@
     <Compile Include="Assets\Scripts\Isometric.cs" />
     <Compile Include="Assets\Scripts\MoveAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Puzzle_Scripts\puzzle1Controller.cs" />
-    <Compile Include="Assets\Scripts\Puzzle_Scripts\Puzzle2Controller.cs" />
-    <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleController.cs" />
-    <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleControllerBase.cs" />
+    <Compile Include="Assets\Scripts\puzzle1Controller.cs" />
     <Compile Include="Assets\Scripts\Transport.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
