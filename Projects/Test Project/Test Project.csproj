@@ -283,7 +283,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
-    <Compile Include="Assets\Scripts\DialogController.cs" />
+    <Compile Include="Assets\Scripts\Dialog_Scripts\ActionDialogController.cs" />
+    <Compile Include="Assets\Scripts\Dialog_Scripts\DialogController.cs" />
+    <Compile Include="Assets\Scripts\Dialog_Scripts\DialogControllerBase.cs" />
     <Compile Include="Assets\Scripts\Isometric.cs" />
     <Compile Include="Assets\Scripts\MoveAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
