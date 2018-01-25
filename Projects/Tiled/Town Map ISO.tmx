@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="staggered" renderorder="right-down" width="30" height="90" tilewidth="200" tileheight="100" staggeraxis="y" staggerindex="odd" nextobjectid="1">
- <tileset firstgid="1" source="Iso Test Tiels.tsx"/>
- <tileset firstgid="26" source="Collision ISO.tsx"/>
+<map version="1.0" tiledversion="1.1.1" orientation="staggered" renderorder="right-down" width="30" height="90" tilewidth="200" tileheight="100" infinite="0" staggeraxis="y" staggerindex="odd" nextobjectid="1">
+ <tileset firstgid="1" source="Isometric Base.tsx"/>
+ <tileset firstgid="26" source="Collsion Objects Sprites.tsx"/>
  <layer name="Terrain" width="30" height="90">
   <data encoding="csv">
 2,2,2,2,2,2,2,2,2,2,2,2,3,10,10,10,10,10,10,12,12,12,12,12,14,10,10,10,10,10,
