@@ -9,8 +9,5 @@ EditorBuildSettings:
     path: Assets/Test_Scene_1.unity
     guid: f42897994bbd2394eba4cacc126a0441
   - enabled: 1
-    path: Assets/test_Scene_2.unity
-    guid: 722df7186e0a44845b4ca8f6d315b4e9
-  - enabled: 1
     path: Assets/Puzzle_1.unity
     guid: 435fdc7d42852d24ba72e81d59feed31

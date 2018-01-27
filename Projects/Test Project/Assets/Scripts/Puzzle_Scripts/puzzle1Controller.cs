@@ -32,7 +32,8 @@ public class puzzle1Controller : PuzzleControllerBase {
         {
             if(_x > 0)
             {
-                _highlight.rectTransform.position = new Vector3(_highlight.rectTransform.position.x - _pixelWidth, _highlight.rectTransform.position.y);
+                _highlight.rectTransform.localPosition = new Vector3(_highlight.rectTransform.localPosition.x - _pixelWidth, _highlight.rectTransform.localPosition.y);
+                Debug.Log(_highlight.rectTransform.position.x + " " + _highlight.rectTransform.position.y + " " + _highlight.rectTransform.position.z);
                 _x--;
             }
         }
@@ -40,7 +41,8 @@ public class puzzle1Controller : PuzzleControllerBase {
         {
             if (_y > 0)
             {
-                _highlight.rectTransform.position = new Vector3(_highlight.rectTransform.position.x, _highlight.rectTransform.position.y + _pixelHeight);
+                _highlight.rectTransform.localPosition = new Vector3(_highlight.rectTransform.localPosition.x, _highlight.rectTransform.localPosition.y + _pixelHeight);
+                Debug.Log(_highlight.rectTransform.position.x + " " + _highlight.rectTransform.position.y + " " + _highlight.rectTransform.position.z);
                 _y--;
             }
         }
@@ -48,7 +50,8 @@ public class puzzle1Controller : PuzzleControllerBase {
         {
             if (_y < _height - 1)
             {
-                _highlight.rectTransform.position = new Vector3(_highlight.rectTransform.position.x, _highlight.rectTransform.position.y - _pixelHeight);
+                _highlight.rectTransform.localPosition = new Vector3(_highlight.rectTransform.localPosition.x, _highlight.rectTransform.localPosition.y - _pixelHeight);
+                Debug.Log(_highlight.rectTransform.position.x + " " + _highlight.rectTransform.position.y + " " + _highlight.rectTransform.position.z);
                 _y++;
             }
         }
@@ -56,7 +59,7 @@ public class puzzle1Controller : PuzzleControllerBase {
         {
             if (_x < _width - 1)
             {
-                _highlight.rectTransform.position = new Vector3(_highlight.rectTransform.position.x + _pixelWidth, _highlight.rectTransform.position.y);
+                _highlight.rectTransform.localPosition = new Vector3(_highlight.rectTransform.localPosition.x + _pixelWidth, _highlight.rectTransform.localPosition.y);
                 _x++;
             }
         }
