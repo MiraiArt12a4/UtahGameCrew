@@ -303,6 +303,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\puzzle1Controller.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\Puzzle2Controller.cs" />
+    <Compile Include="Assets\Scripts\Puzzle_Scripts\Puzzle3Controller.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleController.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleControllerBase.cs" />
     <Compile Include="Assets\Scripts\Transport.cs" />
