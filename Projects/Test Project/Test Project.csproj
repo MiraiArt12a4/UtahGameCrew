@@ -303,6 +303,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\puzzle1Controller.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\Puzzle2Controller.cs" />
+    <Compile Include="Assets\Scripts\Puzzle_Scripts\Puzzle3Controller.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleController.cs" />
     <Compile Include="Assets\Scripts\Puzzle_Scripts\PuzzleControllerBase.cs" />
     <Compile Include="Assets\Scripts\Transport.cs" />
@@ -330,8 +331,13 @@
     <None Include="Assets\Dialogs\John_Dialog.txt" />
     <None Include="Assets\Dialogs\MJ_Dialog.txt" />
     <None Include="Assets\Dialogs\Ophelia_Dialog.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\Classroom.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\PuzzleRoom01.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\School.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Town Map ISO.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\library.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\park.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\License.txt" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
