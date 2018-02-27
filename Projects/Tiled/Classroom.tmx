@@ -5,7 +5,7 @@
  <tileset firstgid="51" source="Library Objects.tsx"/>
  <layer name="Tile Layer 1" width="7" height="9">
   <data encoding="csv">
-21,21,21,21,21,21,19,
+24,24,24,24,24,24,19,
 21,18,18,18,18,18,19,
 21,18,18,18,18,18,19,
 21,18,18,18,18,18,19,
