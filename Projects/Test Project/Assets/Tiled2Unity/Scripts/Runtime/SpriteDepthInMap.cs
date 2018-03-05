@@ -51,9 +51,10 @@ namespace Tiled2Unity
             float depthPerLayer = -this.AttachedMap.TileHeight / mapRect.height;
 
             float depth_z = (spritePosition.y / this.AttachedMap.ExportScale / mapRect.height) + (depthPerLayer * this.InteractWithLayer);
-
+            depth_z = depth_z - 0.007f;
+            //Debug.Log(depth_z + " : " + (float)(Math.Ceiling(depth_z * 1000) / 1000) + " : " + (float)(Math.Floor(depth_z * 1000) / 1000));
             // Assign our depth value in the z component.
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, depth_z - 0.009f);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, (float)(Math.Ceiling(depth_z * 1000) / 1000));
         }
 
     }
