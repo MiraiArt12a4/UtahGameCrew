@@ -294,6 +294,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ActionBubbleController.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Dialog_Scripts\ActionDialogController.cs" />
     <Compile Include="Assets\Scripts\Dialog_Scripts\DialogController.cs" />

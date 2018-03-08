@@ -32,6 +32,10 @@ public class MoveAnimation : MonoBehaviour {
         {
             transition(Animations.RightWalk, "Pinky_Walk_Right");
         }
+        else
+        {
+            transition(Animations.Idle, "Pinky_Idle");
+        }
     }
 
     public void transition(Animations anim, string name)
